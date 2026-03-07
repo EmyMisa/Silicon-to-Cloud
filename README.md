@@ -6,7 +6,7 @@
 
 ## Why This Exists
 
-Most engineers start at the framework and work backwards.  
+Most engineers start with a framework and work backwards.  
 This repo starts at the atom.
 
 This is a living record of deliberately rebuilding foundational knowledge from first principles — no shortcuts, no skipping layers. Every concept here has been studied, broken down, and written in my own words.
@@ -19,7 +19,7 @@ The goal is not just to know how things work, but to understand *why* they work 
 
 | Layer | Topic | Status |
 |-------|-------|--------|
-| 01 | Hardware — atom, electricity, logic gates, CPU, system unit | ✅ Complete |
+| 01 | Hardware — atom, electricity, logic gates, Computers, CPU, system unit | ✅ Complete |
 | 02 | Operating Systems | 🔜 Up next |
 | 03 | Networking | ⬜ Pending |
 | 04 | Security | ⬜ Pending |
@@ -36,13 +36,12 @@ What was covered:
 - **Atom & Electron Flow** — atomic structure, valence electrons, free electron drift, conductors vs insulators
 - **Voltage, Current & Resistance** — Ohm's Law (V = IR), series vs parallel circuits, how power distribution works inside a system unit
 - **Logic Gates & Binary** — AND / OR / NOT / NAND / XOR, boolean algebra, binary arithmetic, the half adder
-- **Computers** — History, types 
 - **CPU Components** — Control Unit, ALU, registers (PC, IR, MAR, MDR), cache hierarchy (L1/L2/L3), the fetch-decode-execute cycle
 - **System Unit Layout** — motherboard, chipset, RAM (volatile/DRAM), SSD vs HDD, PSU voltage rails, PCIe data flow
 
 📂 Notes: [`layers/01-hardware/`](layers/01-hardware/)  
 🗺️ Interactive map: [View on GitHub Pages](index.html)
-📜 Cisco Hardware Basics [https://www.credly.com/badges/4138b774-9466-4de2-8f33-ecd402afcf26/public_url]
+
 ---
 
 ## The Visualiser — Atom to System Unit
@@ -72,6 +71,21 @@ Assemble or disassemble the system unit interactively.
 
 ---
 
+## Learning Sequence
+
+Skills are learned in deliberate order — each one makes the next one land harder.
+
+| Order | Skill | Reason |
+|-------|-------|--------|
+| 01 | **VirtualBox** | A safe machine to break. Virtualisation is not just a tool — it is a foundational concept. Every cloud instance, container, and server environment is a variation of this same idea. Setting up a Linux VM also makes the system unit knowledge from Layer 01 tangible — you are literally allocating CPU cores and RAM you now understand |
+| 02 | **Bash** | Learned inside the VM from day one. Control the machine through text. Foundation for everything that follows — servers, cloud, CI/CD, and the Cisco CLI all operate on this mental model |
+| 03 | **Git** | Used from the terminal inside the VM — no GUI shortcuts. Version control is a core engineering discipline, not an afterthought |
+| 04 | **HTML** | First language. Immediate visual feedback. Trains the eye for structured syntax without compilation pressure |
+| 05 | **Cisco Software (IOS)** | IOS CLI feels like Bash — same mental model, different syntax. Hardware knowledge already in place makes the software make sense |
+| 06 | **C** | The real foundation. Sits one layer above hardware. Every modern language descends from or reacts to C. Learned last here so Bash fluency and hardware context are already in place |
+
+---
+
 ## How This Repo Is Built
 
 - All notes written by hand as each topic is studied
@@ -85,8 +99,10 @@ Assemble or disassemble the system unit interactively.
 
 | Tool | Purpose |
 |------|---------|
+| VirtualBox + Ubuntu | Safe isolated environment — all learning happens inside the VM |
+| Bash | System navigation, scripting, command-line workflow |
+| Git / GitHub | Version control — used from the terminal from day one |
 | HTML / CSS / JS | Interactive knowledge map (learning as I go) |
-| Git / GitHub | Version control and documentation |
 | GitHub Pages | Hosting the knowledge map |
 | Markdown | Layer notes and documentation |
 
@@ -114,7 +130,7 @@ silicon-to-cloud/
 
 | Date | Milestone |
 |------|-----------|
-| 2026-03-07 | Repo created. Layer 01 (Hardware) complete. `index.html` v1 published. Visualiser concept documented. Layers separated — Hardware, OS, Networking, Security, Cloud. |
+| 2026-03-07 | Repo created. Layer 01 (Hardware) complete. `index.html` v1 published. Visualiser concept documented. Layers separated — OS, Networking, Security, Cloud. Learning sequence defined — VirtualBox → Bash → Git → HTML → Cisco IOS → C. |
 
 *This table grows with every layer completed.*
 
