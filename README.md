@@ -32,7 +32,7 @@ The goal is not just to know how things work, but to understand *why* they work 
 **Resources:** 
 
 1.Cisco Hardware Basics - https://www.credly.com/badges/4138b774-9466-4de2-8f33-ecd402afcf26/public_url
-2.TCM Practical Helpdesk -
+2.TCM Practical Helpdesk
 3.Professor Messer — CompTIA A+ Core 1 (220-1101)
 4.Crash Course Computer Science — episodes 1 to 8
 5.Ben Eater's YouTube channel
